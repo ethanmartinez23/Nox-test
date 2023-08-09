@@ -1,0 +1,156 @@
+header{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    transition: 0.5s;
+    background-color: #333333;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 15px 17px 0 rgba(0,0,0,.5);
+    z-index: 9999;
+  }
+  
+  header.shadow {
+      background: #6e0f3b;
+  }
+  
+ .logo{
+      display:inline-block;
+      align-items: center;
+      column-gap: 0.5rem;
+      margin-left: 15px;
+  }
+
+  .logos {
+    height: 50px;
+    width: 170px;
+  }
+
+  .userimg {
+    margin: 5px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+
+  .usercirc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: 50px;
+    background: #222;
+    border-radius: 50px;
+    z-index: 2;
+  }
+
+  .usercirc ul li a{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 18px 14px;
+    font-size: 14px;
+    width: auto;
+  }
+  .usercirc ul li{
+    position: relative;
+    list-style: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .usercirc ul li ul {
+    display: block;
+    position: absolute;
+    background-color: #222;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+  }
+
+  .usercirc ul li ul li a {
+    padding: 12px 14px;
+    margin-right: 0px;
+    font-size: 12px;
+  }
+
+  .usercirc ul li ul li {
+    width: 110px;
+    
+  }
+
+  .usercirc ul li ul li a:hover {
+    background-color: #333;
+  }
+
+  .usercirc ul li:hover ul {
+    visibility: visible;
+  }
+
+  .navbar{
+      display: flex;
+      column-gap: 3rem;
+  }
+  .navbar li{
+      position: relative;
+      list-style: none;
+  }
+  
+  .navbar a{
+      font-size:  1rem;
+      font-weight: 500;
+      font-family: "Montserrat Alternates", sans-serif;
+      color: aliceblue;
+      text-decoration: none;
+  }
+  
+  .navbar a::after{
+      content: '';
+      width: 0;
+      height: 2px;
+      background: aquamarine;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transition: 0.4s all linear;
+  }
+  
+  .navbar a:hover::after, .navbar::after {
+      width: 100%
+  }
+  
+  #menu-icon{
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 1000001;
+      display: none;
+  }
+  
+  .btnL {
+      padding: 0.7rem 1.4rem;
+      margin-left: 20px;
+      background: #D9D9D9;
+      color: #706C61    ;
+      font-weight: bold;
+      font-family: "Montserrat Alternates", monospace;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      color: #706C61;
+      margin-right: 20px;
+      margin-left: 40px;
+  }
+  
+  .btnL:hover {
+      background: #befffc;
+      color: #000;
+  }

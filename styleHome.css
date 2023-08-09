@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-image: url('img/nox_bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+  
+  .container {
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-90%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid #333333;
+    border-radius: 38px;
+    box-shadow: 0px 10px 20px rgba(203, 245, 255, 0.5);
+    margin-top: 40px;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    animation: slides 30s infinite;
+  }
+
+  @keyframes slides {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  .menu {
+    margin-top: 45%;
+    margin-left: 4%;
+    width: 200px;
+  }
+
+  h1{
+    margin: 10vh auto;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat Alternates";
+    position: relative;
+  }
+
+  h1::before {
+    background-color: #fff;
+    display: block;
+    width: 500px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+  }
+
+  h1::after {
+    background-color: #fff;
+    display: block;
+    width: 500px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+  }
+
+  .prods-cont {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .drink {
+    display: grid;
+    width: 170px;
+    height: 270px;
+    background-color: #666  ;
+    justify-items: center;
+    border-radius: 20px;
+    opacity: .85;
+    transition: 0.5s ease-in-out;
+  }
+
+  .drink img {
+    margin-top: 25px;
+    height: 130px;
+    width: 130px;
+  }
+
+  .drink h3{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  .drink .btnOrder{
+    position: absolute;
+    padding: 10px 30px;
+    margin-top: 110%;
+    background-color: #6e0f3b;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    z-index: -5;
+    opacity: 0;
+  }
+
+  .drink:hover .btnOrder{
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+
+
+  .drink:hover h3{
+    transition: 0.60s ease-in-out;
+    opacity: 0
+  }
+
+  .drink:hover {
+    width: 170px;
+    height: 27  0px;
+    background-color: #666  ;
+    border-radius: 20px;
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+  .rating .rate {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .food {
+    display: grid;
+    width: 170px;
+    height: 270px;
+    background-color: #666  ;
+    justify-items: center;
+    border-radius: 20px;
+    opacity: .85;
+    transition: 0.5s ease-in-out;
+  }
+
+  .food img {
+    margin-top: 25px;
+    height: 130px;
+    width: 130px;
+  }
+
+  .food h3{
+    text-align: center;
+    font-weight: 2px;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  .food .btnOrder{
+    position: absolute;
+    padding: 10px 30px;
+    margin-top: 110%;
+    background-color: #6e0f3b;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    z-index: -5;
+    opacity: 0;
+  }
+
+  .food:hover .btnOrder{
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+
+  .food:hover h3{
+    transition: 0.5s ease-in-out;
+    opacity: 0
+  }
+
+  .food:hover {
+    width: 170px;
+    height: 27  0px;
+    background-color: #666  ;
+    border-radius: 20px;
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  #scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5b5b5b;
+    border-radius: 6px;
+  }
+
+  /* About Section */
+   .abouts {
+    width: 200px;
+    margin-left: 4%;
+    margin-top: 8%;
+  }
+  
+  .client-info {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .client-pic {
+    margin: 20px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 390px;
+    background: #333;
+    border-radius: 20px;
+  }
+
+  .client-pic img{
+    height: 380px;
+    width: 370px;
+    border-radius: 20px;
+  }
+
+  .client-desc {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .client-pic1 {
+    margin: 20px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 390px;
+    background: #333;
+    border-radius: 20px;
+  }
+
+  .client-pic1 img{
+    height: 380px;
+    width: 370px;
+    border-radius: 20px;
+  }
+
+  .client-pic2 {
+    margin: 20px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 550px;
+    background: #333;
+    border-radius: 20px;
+  }
+
+  .client-pic2 img{
+    height: 240px;
+    width: 600px;
+    border-radius: 20px;
+  }
+  
+
+

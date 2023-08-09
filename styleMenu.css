@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-image: url('img/nox_bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+  .menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30%;
+  }
+  
+  .menu-blurbx{
+    width: 90%;
+    height: auto;
+    background: transparent;
+    border: 2px rgb(37, 34, 34);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(203, 245, 255, 0.5);
+
+    
+  }
+
+  .menu-blurbx {
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .menu-blurbx h1 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  .menu-container {
+    height: auto;
+    margin: 10px;
+    background-color: #222;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .menu-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .menu-container ul li {
+    list-style: none;
+    margin: 11px;
+  }
+
+  .menu-container a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .menu-container a:hover {
+    background-color: #befffc;
+    color: black;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    transition: .9s ease-in-out;
+  }
+
+  .list-cont {
+    background-color: #333;
+    height: 50px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+  .menu-cont {
+    width: 100%;
+  }
+
+.prods-cont {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .drink {
+    display: grid;
+    width: 130px;
+    height: 210px;
+    background-color: #666  ;
+    justify-items: center;
+    border-radius: 20px;
+    opacity: .85;
+    transition: 0.5s ease-in-out;
+  }
+
+  .drink img {
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .drink h3{
+    text-align: center;
+    font-size: 9px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  .drink .btnOrder{
+    position: absolute;
+    padding: 10px 30px;
+    margin-top: 80%;
+    background-color: #6e0f3b;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    z-index: -5;
+    opacity: 0;
+  }
+
+  .drink:hover .btnOrder{
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+
+
+  .drink:hover h3{
+    transition: 0.60s ease-in-out;
+    opacity: 0
+  }
+
+  .drink:hover {
+    width: 170px;
+    height: 27  0px;
+    background-color: #666  ;
+    border-radius: 20px;
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+  .rating .rate {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .food {
+    display: grid;
+    width: 130px;
+    height: 230px;
+    background-color: #666  ;
+    justify-items: center;
+    border-radius: 20px;
+    opacity: .85;
+    transition: 0.5s ease-in-out;
+  }
+
+  .food img {
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .food h3{
+    text-align: center;
+    font-weight: 2px;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+
+  .food .btnOrder{
+    position: absolute;
+    padding: 10px 30px;
+    margin-top: 80%;
+    background-color: #6e0f3b;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    z-index: -5;
+    opacity: 0;
+  }
+
+  .food:hover .btnOrder{
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+
+  .food:hover h3{
+    transition: 0.5s ease-in-out;
+    opacity: 0
+  }
+
+  .food:hover {
+    width: 170px;
+    height: 27  0px;
+    background-color: #666  ;
+    border-radius: 20px;
+    opacity: 1;
+    transform: translateY(10px);
+  }

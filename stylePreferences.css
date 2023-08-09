@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-image: url('img/nox_bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    transition: 0.5s;
+    background-color: #333333;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 15px 17px 0 rgba(0,0,0,.5);
+    z-index: 9999;
+  }
+  
+  header.shadow {
+      background: #6e0f3b;
+  }
+  
+ .logo{
+      display:inline-block;
+      align-items: center;
+      column-gap: 0.5rem;
+      margin-left: 20px;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 170px;
+  }
+
+  .navbar{
+      display: flex;
+      column-gap: 3rem;
+  }
+  .navbar li{
+      position: relative;
+      list-style: none;
+      margin-right: 10px;
+  }
+  
+  .navbar a{
+      font-size:  1rem;
+      font-weight: 500;
+      font-family: "Montserrat Alternates", sans-serif;
+      color: aliceblue;
+      text-decoration: none;
+  }
+  
+  .navbar a::after{
+      content: '';
+      width: 0;
+      height: 2px;
+      background: aquamarine;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transition: 0.4s all linear;
+  }
+  
+  .navbar a:hover::after, .navbar .home-active::after {
+      width: 75%;
+      margin-left: 18px;
+  }
+  
+  #menu-icon{
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 1000001;
+      display: none;
+  }
+  
+  .next {
+      display: flex;
+      justify-content: center;
+      padding: 0.7rem 10rem;
+      background: #fff;
+      color: #706C61    ;
+      font-weight: bold;
+      font-family: "Poppins", monospace;
+      border-radius: 20rem;
+      text-decoration: none;
+      color: #706C61;
+  }
+  
+  .next:hover {
+      background: #befffc;
+      color: #000;
+  }
+
+  .logcen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 620px;
+    background: transparent;
+    border: 2px rgba(206, 204, 204, 1);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(203, 245, 255, 0.5);
+
+  }
+
+  .login-wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .login-wrapper p {
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .Prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #333333;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+  }
+
+  .Prof:hover {
+    background-color: #befffc;
+  }
+
+  .Prof p:hover {
+    color: #000;
+  }
+
+  .prefbtns {
+    width: 620px;
+  }
+
+  main a{
+    background-color: #6e0f3b;
+  }
+
+  main ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  main a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color:#706C61;
+    border-radius: 20px;
+    padding: 8px;
+  }
+
+  main li {
+    list-style: none;
+  }
+
+  main a:hover {
+    background-color: #befffc;
+    transition: ease-in-out .3s;
+    color: black;
+  }
+  
+  main a:focus {
+    background-color: #6e0f3b;
+  }
+
+  .btnss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .slct label {
+    font-family: 'Poppins', sans-serif ;
+  }
+  
